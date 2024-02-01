@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--header/navbar-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Grocery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!--main-->
+<body>
+    <nav class="navigation-grocery">
+        <img src="Assets/your-logo.jpg" alt="logo" class="logo">
+        <ul class="navigation-items">
+            <li>Home</li>
+            <li>Our Product</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+    <!--Home-->
+    <header>
+        <h1>Hello Welcome to E-Groceries Site</h1>
+        <h4>for your way to a healthier gut</h4>
+        <div>
+            <div id="slider">
+                <div id="slides">
+                    <div class="slide"><img src="Assets/img1.jpg" alt="image-1"></div>
+                    <div class="slide"><img src="Assets/img2.jpg" alt="image-2"></div>
+                    <div class="slide"><img src="Assets/img3.jpg" alt="image-3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Our Package-->
+    <div class="our-product">
+        <div>
+            <div class="circle" style="background-image: url(Assets/sayur.jpg);"></div>
+            <p>Whole Food</p>
+        </div>
+        <div>
+            <div class="circle" style="background-image: url(Assets/gluten-free.jpg);"></div>
+            <p>Gluten Free</p>
+        </div>
+        <div>
+            <div class="circle" style="background-image: url(Assets/yoghurt.jpg);"></div>
+            <p>Yoghurt or Drink</p>
+        </div>
+    </div>
+    <!--Contact Us-->
+    <div class="inquiry-customer" id="contact">
+        <div class="tabel-contact">
+            <div class="kolom-contact">
+                <div class="padding-contact"><span class="border-contact">Contact Us</span></div>
+                <h4>Address</h4>
+                <p>Admin will contact you within a maximum of 2 hours after we receive your data</p>
+                <p><i class="map marker"></i> Yogyakarta, Indonesia</p>
+                <p><i class="phone marker"></i>+628123456789</p>
+                <p><i class="mail marker"></i>shop@egroceries.com</p>
+            </div>
+        </div>
+        <form class="inquiry-form">
+            <div>
+                <label for="name">Name</label>
+                <input id="input-name" name="name" type="text" required placeholder="input name">
+                <p id="name-error" class="error-message"></p>
+            </div>
+            <div>
+                <label for="email">Email Address</label>
+                <input id="input-email" name="email" type="text" required placeholder="input email">
+                <p id="email-error" class="error-message"></p>
+            </div>
+            <div class="responsive">
+                <label for="select">What are you interested in?</label>
+                <select id="selects" name="selects">
+                    <option value="">-- select an option --</option>
+                    <option value="1">-- Whole Food --</option>
+                    <option value="2">-- Organic Food --</option>
+                    <option value="3">-- Fast Food --</option>
+                </select>
+            </div>
+            <button id="tombol-kirim">Send</button>
+        </form>
+        <div class="output">
+            <!--put your output in here-->
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+<!--footer-->
+<footer>
+
+</footer>
+</html>
